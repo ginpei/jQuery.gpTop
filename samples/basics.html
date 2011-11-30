@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+
+<!-- There are JavaScript sample codes in bottom. -->
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery.gpTop</title>
+  <link rel="stylesheet" href="jquery-ui-1.8.16.custom.css" />
+  <style type="text/css">
+body {
+    font-family: "Times", "Times New Roman", serif;
+}
+pre {
+    background-color: #fffff0;
+    border: ridge 2px;
+    display: inline-block;
+    font-family: 'Courier', 'Courier New', monospace;
+    padding: 1em;
+}
+img {
+    border-style: none;
+}
+
+#goto_top {
+    bottom: 10px;
+    display: none;
+    position: fixed;
+    right: 10px;
+}
+
+#dummy p {
+    line-height: 1.5em;
+    margin: 10px;
+}
+  </style>
+</head>
+<body>
+  <h1 id="top">jQuery.gpTop</h1>
+  <div id="main">
+    <p>The plugin.</p>
+    <p>for: IE 7+, Firefox, Chrome, Safari, Opera</p>
+    <p>
+      <pre>$(elem).gpTop();</pre>
+    </p>
+    <p>
+      See sample codes in HTML source,<br />
+      and more informations in: <a href="http://ginpen.com/jquery/gptop/">Ginpen.com</a>.
+    </p>
+    <p>
+      Scroll down... &#8595; &#8595; &#8595;
+    </p>
+    <div id="dummy">
+      <script src="lorem.js"></script>
+    </div>
+    <div id="goto_top"><a href="#top"><img src="goto_top.png" width="50" height="50" alt="Goto Top" /></a></div>
+  </div>
+  <div>
+    <script src="jquery-1.7.1.min.js"></script>
+    <script src="../jquery.gptop-1.0.js"></script>
+    <script>
+(function() {
+  $('#goto_top').gpTop();
+}());
+    </script>
+  </div>
+</body>
+</html>
